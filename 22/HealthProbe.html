@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Health Probe</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			color: #333;
+			text-align: center;
+		}
+		
+		h1 {
+			font-size: 24px;
+			margin-top: 40px;
+			margin-bottom: 20px;
+		}
+		
+		p {
+			margin-bottom: 20px;
+		}
+		
+		.success {
+			color: green;
+			font-weight: bold;
+		}
+		
+		.failure {
+			color: red;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<h1>Azure Load Balancer Health Probe</h1>
+	<p>
+		This page is used for Azure Load Balancer health probing. If you can see this, it means that the server is up and running.
+	</p>
+	<p>
+		Status: <span class="success">Healthy</span>
+	</p>
+	<p>
+		Generated on: <span id="generated"></span>
+	</p>
+	
+	<script>
+		// Set the current date and time at script runtime
+		document.getElementById("generated").innerHTML = new Date().toLocaleString();
+	</script>
+</body>
+</html>
